@@ -1,3 +1,4 @@
+
 # Crypto Heatmap
 
 A web application that visualizes cryptocurrency market data as an interactive heatmap.
