@@ -21,14 +21,7 @@ app.use(express.json());
 // Routes
 app.use('/api', heatmapRoutes);
 
-// Health check
-// app.get('/health', (req, res) => {
-//   res.json({ 
-//     status: 'healthy', 
-//     timestamp: new Date().toISOString(),
-//     environment: process.env.NODE_ENV || 'development'
-//   });
-// });
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -45,10 +38,10 @@ app.use('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`📊 API available at: http://localhost:${PORT}/api/heatmap`);
-  console.log(`❤️  Health check: http://localhost:${PORT}/health`);
+  console.log(` Server running on port ${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`API available at: http://localhost:${PORT}/api/heatmap`);
+  console.log(` Health check: http://localhost:${PORT}/health`);
 });
 
 module.exports = app;

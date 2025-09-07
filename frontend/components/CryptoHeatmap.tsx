@@ -59,12 +59,12 @@ export default function CryptoHeatmap({ coins }: CryptoHeatmapProps) {
   return (
     <div className="w-full h-full grid grid-cols-2 ">
   
-      <div className="bg-white rounded-xl shadow-lg h-screen ">
+      <div className="bg-white rounded-xl shadow-lg h-full ">
         {gridItems[0]}
       </div>
 
      
-      <div className="grid grid-rows-2 h-screen w-full">        
+      <div className="grid grid-rows-2  w-full">        
         <div className="grid grid-cols-[2fr,1fr,1fr]">
           {gridItems.slice(1, 4)}
         </div>

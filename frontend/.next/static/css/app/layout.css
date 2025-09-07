@@ -823,13 +823,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
+
 .hover\:bg-\[\#00c285f0\]:hover {
   background-color: #00c285f0;
 }
 
+
 .hover\:bg-\[\#c70025cf\]:hover {
   background-color: #c70025cf;
 }
+
 
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
