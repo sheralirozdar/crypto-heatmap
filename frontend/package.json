@@ -1,0 +1,88 @@
+{
+  "name": "crypto-heatmap-frontend",
+  "version": "1.0.0",
+  "description": "Next.js frontend for crypto market heatmap with real-time data visualization",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ui": "jest --watchAll",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "clean": "rm -rf .next && rm -rf node_modules/.cache",
+    "clean:install": "npm run clean && npm install",
+    "prepare": "npm run type-check && npm run lint"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.294.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/jest": "^29.5.5",
+    "typescript": "^5.2.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "14.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/user-event": "^14.5.1",
+    "jest-watch-typeahead": "^2.2.2",
+    "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-testing-library": "^6.1.0"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "cryptocurrency",
+    "heatmap",
+    "coingecko",
+    "trading",
+    "market-data",
+    "financial",
+    "dashboard"
+  ],
+  "author": "Crypto Heatmap Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheralirozdar/crypto-heatmap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sheralirozdar/crypto-heatmap/issues"
+  },
+  "homepage": "https://github.com/sheralirozdar/crypto-heatmap#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
